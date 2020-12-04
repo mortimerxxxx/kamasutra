@@ -1,0 +1,6 @@
+.dialogs {
+    /*grid-area: h;*/
+    background-color: #a9d9d1;
+    width: 100%;
+    display: flex;
+}

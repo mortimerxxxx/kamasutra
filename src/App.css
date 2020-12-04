@@ -1,16 +1,13 @@
 .app-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
-  /*grid-template-areas:*/
-  /*        'h h'*/
-  /*        'n c';*/
-
-  /*grid-template-rows: 60px 1fr;*/
-  /*grid-template-columns: 2fr 10fr;*/
-  /*grid-gap: 10px;*/
 }
 .content-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex: 1 1 auto;
 }

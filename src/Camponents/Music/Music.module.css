@@ -1,0 +1,9 @@
+.music {
+    /*grid-area: h;*/
+    background-color: #de3939;
+    width: 100%;
+    display: flex;
+}
+a{
+    color: #92e360;
+}
