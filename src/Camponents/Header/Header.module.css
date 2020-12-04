@@ -1,0 +1,14 @@
+.header {
+    /*grid-area: h;*/
+    background-color: #6655aa;
+    max-height: 60px;
+    width: 100%;
+    min-height: 100px;
+    align-items: center;
+    display: flex;
+}
+.header img {
+    width: 70px;
+    margin-left: 30px;
+    padding: 15px 0;
+}

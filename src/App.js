@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './Camponents/Header';
-import Nav from "./Camponents/Nav";
-import Profile from "./Camponents/Profile";
+import Header from './Camponents/Header/Header';
+import Nav from "./Camponents/Nav/Nav";
+import MyPosts from "./Camponents/Profile/Profile";
 
 const App = () => {
     return (
@@ -10,7 +10,7 @@ const App = () => {
             <Header />
             <div className="content-wrapper">
                 <Nav />
-                <Profile />
+                <MyPosts />
             </div>
         </div>
     );
