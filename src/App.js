@@ -10,18 +10,27 @@ import Settings from "./Camponents/Settings/Settings";
 import News from "./Camponents/News/News";
 import Music from "./Camponents/Music/Music";
 
-const App = () => {
+const App = (props) => {
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header />
                 <div className="content-wrapper">
                     <Nav />
-                    <Route path="/dialogs" component={Dialogs}/>
-                    <Route path="/profile" component={Profile}/>
-                    <Route path="/music" component={Music}/>
-                    <Route path="/news" component={News}/>
-                    <Route path="/settings" component={Settings}/>
+                    <Route path="/dialogs" render={
+                        () => <Dialogs
+                            state={props.state.dialogsPage}
+                        />
+                    }/>
+                    <Route path="/profile" render={
+                        () => <Profile
+                            state={props.state.profilePage}
+                        />
+                    }/>
+                    <Route path="/music" render={ () => <Music />}/>
+                    <Route path="/news" render={ () => <News />}/>
+                    <Route path="/settings" render={ () => <Settings />}/>
                 </div>
                 <Footer />
             </div>

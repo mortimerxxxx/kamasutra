@@ -12,7 +12,8 @@
 }
 .item > a{
     color: aliceblue;
+    text-decoration: none;
 }
-.item.active > a{
+.item a.activeLink{
     color: #a9e0d1;
 }

@@ -1,6 +1,21 @@
 .dialogs {
-    /*grid-area: h;*/
     background-color: #a9d9d1;
     width: 100%;
     display: flex;
+}
+.dialogItems {
+    flex-grow: 1;
+    border-right: 2px solid #000000;
+    padding: 50px 0 0 50px;
+}
+.dialog a {
+    color: #fdfdfd;
+}
+.dialogItems .active {
+    color: #cb0303;
+}
+.messages {
+    flex-grow: 10;
+    margin-left: 15px;
+    padding: 50px 0 0 50px;
 }

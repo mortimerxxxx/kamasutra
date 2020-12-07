@@ -1,7 +1,27 @@
 .content {
     /*grid-area: c;*/
     background-color: #cccc99;
+    padding-left: 10px;
 }
 .content img {
     max-width: 100%;
+}
+.inputBtn {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+button {
+    max-width: 120px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: auto;
+    box-shadow: 2px 2px 3px;
+}
+.posts {
+    color: #000;
 }

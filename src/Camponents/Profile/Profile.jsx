@@ -1,16 +1,15 @@
 import React from 'react';
 import s from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
-const Profile = () => {
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
+const Profile = (props) => {
+
     return (
+
         <div className={s.content}>
-            <div>
-                <img src="https://demotivation.ru/wp-content/uploads/2020/01/topoboi.com-40187.jpg" alt=""/>
-            </div>
-            <div>
-                ava + descr
-            </div>
-            <MyPosts />
+            <ProfileInfo />
+            <MyPosts postData={props.state.postData}/>
         </div>
     )
 }
